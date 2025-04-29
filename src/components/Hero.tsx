@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -29,43 +30,84 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
-        <div className="order-2 md:order-1 text-center md:text-left animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        <motion.div 
+          className="order-2 md:order-1 text-center md:text-left"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h1 
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+          >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-theme-teal to-theme-amber">Hello, I'm</span>
             <br />
             <span className="text-theme-light">Your Name</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-theme-light/80 mb-8">
+          </motion.h1>
+          <motion.p 
+            className="text-xl md:text-2xl text-theme-light/80 mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+          >
             Full Stack Developer & Designer
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
+          </motion.p>
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          >
+            <motion.a
               href="#contact"
               className="px-6 py-3 bg-gradient-to-r from-theme-teal to-theme-amber rounded-lg hover:opacity-90 transition-opacity text-theme-darkest font-medium"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Contact Me
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="#about"
               className="px-6 py-3 border border-theme-light/20 hover:border-theme-teal rounded-lg transition-colors text-theme-light"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Learn More
-            </a>
-          </div>
-        </div>
+            </motion.a>
+          </motion.div>
+        </motion.div>
         
-        <div className="order-1 md:order-2 flex justify-center animate-scale-in">
-          <div className="relative">
+        <motion.div 
+          className="order-1 md:order-2 flex justify-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ 
+            type: "spring", 
+            stiffness: 100, 
+            delay: 0.2,
+            duration: 0.8 
+          }}
+        >
+          <motion.div 
+            className="relative"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 200 }}
+          >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-theme-teal to-theme-amber rounded-full blur-md opacity-70"></div>
             <div className="relative rounded-full overflow-hidden border-4 border-theme-dark h-64 w-64 md:h-80 md:w-80 shadow-xl" style={{ transform: 'translate(var(--x), var(--y))' }}>
-              <img
+              <motion.img
                 src="/lovable-uploads/b70d0b05-44cd-4063-a402-e3699b5abd09.png"
                 alt="Profile Image"
                 className="w-full h-full object-cover"
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.6 }}
               />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

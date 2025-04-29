@@ -1,5 +1,6 @@
 
 import { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 interface Skill {
   name: string;
@@ -64,17 +65,35 @@ const Skills = () => {
   
   return (
     <section id="skills" className="py-20 px-4 bg-theme-darker" ref={skillsRef}>
-      <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+      <motion.div 
+        className="container mx-auto"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-theme-teal to-theme-amber">
             My Skills
           </span>
-        </h2>
+        </motion.h2>
         
-        <div className="flex justify-center mb-10">
+        <motion.div 
+          className="flex justify-center mb-10"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <div className="flex space-x-2 p-1 bg-theme-darkest/50 rounded-lg">
             {categories.map((category) => (
-              <button
+              <motion.button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-4 py-2 rounded-md transition-all ${
@@ -82,35 +101,48 @@ const Skills = () => {
                     ? 'bg-gradient-to-r from-theme-teal to-theme-amber text-theme-darkest'
                     : 'text-theme-light/70 hover:text-theme-light'
                 }`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 {category.label}
-              </button>
+              </motion.button>
             ))}
           </div>
-        </div>
+        </motion.div>
         
-        <div className="glass-card p-6 max-w-3xl mx-auto">
+        <motion.div 
+          className="glass-card p-6 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
           <div className="space-y-8">
             {filteredSkills.map((skill, index) => (
-              <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 10 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
                 <div className="flex justify-between mb-2">
                   <span className="text-theme-light">{skill.name}</span>
                   <span className="text-theme-light/70">{skill.level}%</span>
                 </div>
                 <div className="skill-bar">
-                  <div 
+                  <motion.div 
                     className="skill-progress"
-                    style={{ 
-                      width: isVisible ? `${skill.level}%` : '0%',
-                      transition: `width 1s ease-in-out ${index * 0.2}s`
-                    }}
-                  ></div>
+                    initial={{ width: "0%" }}
+                    animate={{ width: isVisible ? `${skill.level}%` : "0%" }}
+                    transition={{ duration: 1.2, delay: index * 0.2, ease: "easeOut" }}
+                  ></motion.div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
