@@ -64,8 +64,10 @@ const About = () => {
               </div>
               
               <a 
-                href="#" 
+                href="https://docs.google.com/document/d/11cnAvMgFQlUKJwKxs3tJ-l7c7ejDQLeUDKcCMqN5fOk/edit?usp=drive_link" 
                 className="inline-flex items-center text-theme-teal hover:text-theme-amber transition-colors mt-4"
+                target="_blank" 
+                rel="noopener noreferrer"
               >
                 <span>Download Resume</span>
                 <ArrowRight size={16} className="ml-2" />
