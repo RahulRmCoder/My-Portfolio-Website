@@ -6,6 +6,7 @@ import TimelineSection from "@/components/TimelineSection";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 import { experienceData } from "@/data/experienceData";
 import { educationData } from "@/data/educationData";
@@ -29,6 +30,7 @@ const Index = () => {
       <Skills />
       <Contact />
       <Footer />
+      <Toaster />
     </div>
   );
 };
