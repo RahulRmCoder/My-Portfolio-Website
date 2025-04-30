@@ -2,23 +2,20 @@
 export const educationData = [
   {
     id: 1,
-    title: "Master of Computer Science",
-    organization: "University of Technology",
-    duration: "2015 - 2017",
-    description: "Specialized in software engineering with focus on web technologies and distributed systems. Graduated with distinction and completed a thesis on efficient React rendering optimizations."
+    title: "Bachelors of Computer Science and Technology",
+    organization: "Jain University",
+    duration: "2022 - Present",
+    location:"Bengaluru, Karnataka, India",
+    grade: "9.66",
+    description: "Pursuing a degree in Computer Science with a specialization in Software Engineering. Coursework includes Web Development, Data Structures and Algorithms (DSA), Design and Analysis of Algorithms (DAA), Operating Systems, Linux, SQL & NoSQL databases. Elective: Data Engineering."
   },
   {
     id: 2,
-    title: "Bachelor of Computer Science",
-    organization: "State University",
-    duration: "2011 - 2015",
-    description: "Core curriculum included data structures, algorithms, database systems, and web development. Participated in multiple hackathons and coding competitions."
-  },
-  {
-    id: 3,
-    title: "Web Development Bootcamp",
-    organization: "Code Academy",
-    duration: "2014 (3 months)",
-    description: "Intensive training in modern web development technologies including HTML, CSS, JavaScript, and frameworks like React and Node.js."
+    title: "Higher Secondary",
+    organization: "Chinmaya Vidyalaya Kolazhy",
+    duration: "2021 - 2022",
+    location:"Thrissur, Kerala, India",
+    grade: "96.6%",
+    description: "Completed CBSE curriculum with core subjects: Mathematics, Physics, Chemistry, Biology, English, and Computer Science. Gained strong foundational knowledge in programming and logical reasoning."
   }
 ];

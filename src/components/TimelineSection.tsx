@@ -1,5 +1,4 @@
-
-import { Briefcase, School } from 'lucide-react';
+import { Briefcase, School, MapPin, Award, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface TimelineItem {
@@ -8,6 +7,8 @@ interface TimelineItem {
   organization: string;
   duration: string;
   description: string;
+  location?: string;
+  grade?: string; // Added grade property
 }
 
 interface TimelineSectionProps {
@@ -73,18 +74,35 @@ const TimelineSection = ({ title, items, type }: TimelineSectionProps) => {
                     </span>
                   </div>
                   
-                  <div className="flex items-center gap-2 mb-4">
-                    <motion.div
-                      animate={{ rotate: [0, 10, 0] }}
-                      transition={{ duration: 0.5, delay: index * 0.3 + 0.5 }}
-                    >
-                      {type === 'experience' ? (
-                        <Briefcase size={16} className="text-theme-teal" />
-                      ) : (
-                        <School size={16} className="text-theme-teal" />
-                      )}
-                    </motion.div>
-                    <span className="text-theme-light/80">{item.organization}</span>
+                  <div className="flex flex-col gap-2 mb-4">
+                    <div className="flex items-center gap-2">
+                      <motion.div
+                        animate={{ rotate: [0, 10, 0] }}
+                        transition={{ duration: 0.5, delay: index * 0.3 + 0.5 }}
+                      >
+                        {type === 'experience' ? (
+                          <Briefcase size={16} className="text-theme-teal" />
+                        ) : (
+                          <School size={16} className="text-theme-teal" />
+                        )}
+                      </motion.div>
+                      <span className="text-theme-light/80">{item.organization}</span>
+                    </div>
+                    
+                    {item.location && (
+                      <div className="flex items-center gap-2">
+                        <MapPin size={16} className="text-theme-amber" />
+                        <span className="text-theme-light/80">{item.location}</span>
+                      </div>
+                    )}
+                    
+                    {/* Show grade only for education entries */}
+                    {type === 'education' && item.grade && (
+                      <div className="flex items-center gap-2">
+                        <Award size={16} className="text-theme-teal" />
+                        <span className="text-theme-light/80">{item.grade}</span>
+                      </div>
+                    )}
                   </div>
                   
                   <motion.p 

@@ -12,29 +12,35 @@ interface Project {
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with React, Tailwind CSS, and Framer Motion animations.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    demoLink: "#",
-    codeLink: "https://github.com/yourusername/portfolio"
+    title: " AI Text Processing Application",
+    description: " Django App – AI-powered text summarization & style-based rewriting using Groq API, with user authentication & historytracking. ",
+    image: "https://miro.medium.com/v2/resize:fit:1400/1*KnV1cBSw-kWyh7Y6XEEzrA.jpeg",
+    technologies: ["HTML", "CSS", "Javascript", "Django","MongoDB","Generative AI","Gemini API"],
+    codeLink: "https://github.com/RahulRmCoder/AI-Text-Processing-Application"
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    description: "A full-featured online store with product listings, cart functionality, and payment processing.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-    demoLink: "#",
-    codeLink: "https://github.com/yourusername/ecommerce"
+    title: "Word Weave: Blogging Website",
+    description: "Word Weave – AI-powered modern blogging platform with a dark theme, intuitive writing, social engagement, and advanced analytics. ",
+    image: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    technologies: ["HTML", "CSS", "Javascript", "Expess.js","MongoDB","Generative AI","Gemini API"],
+    codeLink: "https://github.com/RahulRmCoder/Word-Weave-Blogging-Website"
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Real-time weather forecast app that provides current conditions and 5-day forecasts.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    technologies: ["JavaScript", "HTML/CSS", "OpenWeather API"],
-    demoLink: "#",
-    codeLink: "https://github.com/yourusername/weather-app"
+    title: " CraveCrafters: Food Ordering Web Application",
+    description: " CraveCrafters – AI-powered food ordering web app with a chatbot for menu browsing, orders & support. Built with Node.js, FastAPI, MongoDB & JS.",
+    image: "https://media.istockphoto.com/id/2166408604/photo/group-adult-asia-male-female-freelance-typing-write-prompt-ai-bot-it-app-smart-program-nomad.webp?a=1&b=1&s=612x612&w=0&k=20&c=MVxFXRqN3d3UMU11rRitHUU6-KQ6lmIRf0GJAnVn-2k=",
+    technologies: ["HTML","CSS",'Javascript',"Express.js","MongoDB","Machine Learning","Generative AI","ChatBot","Gemini API"],
+    codeLink: "https://github.com/RahulRmCoder/CraveCrafters-Food-App"
+  },
+  {
+    id: 4,
+    title: "GrammarGuru",
+    description: "GrammarGuru is a web application that provides instant feedback on grammar, punctuation, and style to help users improve their writing. Whether you're drafting emails, writing content, or communicating in English as a second language, GrammarGuru helps you express yourself clearly and correctly.",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nfGVufDB8fDB8fHww",
+    technologies: ["HTML", "Tailwind CSS", "Typescript","React","Lyzr AI Agent"],
+    demoLink: "https://elegant-grammar-glow.lovable.app/",
+    codeLink: "https://github.com/RahulRmCoder/elegant-grammar-glow"
   }
 ];

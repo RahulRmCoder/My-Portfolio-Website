@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Code } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -39,12 +38,15 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Email service implementation
-      // Using EmailJS as an example (you would need to add this dependency)
-      // This part would be replaced with your actual email sending implementation
-      const serviceId = "YOUR_EMAILJS_SERVICE_ID";
-      const templateId = "YOUR_EMAILJS_TEMPLATE_ID";
-      const userId = "YOUR_EMAILJS_USER_ID";
+      // Fixed variable names to match exactly with your .env file
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; // Fixed variable name
+      const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+      
+      // Debug logs (remove in production)
+      console.log("Service ID:", serviceId);
+      console.log("Template ID:", templateId);
+      console.log("User ID:", userId);
       
       const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
@@ -56,10 +58,12 @@ const Contact = () => {
           template_id: templateId,
           user_id: userId,
           template_params: {
-            from_name: data.name,
-            from_email: data.email,
-            message: data.message
+            name: data.name,
+            email: data.email,
+            message: data.message,
+            title: "Contact Request" // Optional: only if using {{title}} in the subject
           }
+          
         })
       });
       
@@ -70,7 +74,9 @@ const Contact = () => {
         });
         form.reset();
       } else {
-        throw new Error("Failed to send message");
+        const errorData = await response.text();
+        console.error("EmailJS error response:", errorData);
+        throw new Error(`Failed to send message: ${errorData}`);
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -97,25 +103,25 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-4 text-theme-light">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Mail size={20} className="mr-3 text-theme-teal" />
-                  <span className="text-theme-light/80">youremail@example.com</span>
+                  <Mail size={20} className="mr-3 text-theme-teal flex-shrink-0" />
+                  <span className="text-theme-light/80 break-all">rahulrajasekharanmenon64325@gmail.com</span>
                 </div>
                 <div className="flex items-center">
-                  <Phone size={20} className="mr-3 text-theme-teal" />
-                  <span className="text-theme-light/80">+1 234 567 890</span>
+                  <Phone size={20} className="mr-3 text-theme-teal flex-shrink-0" />
+                  <span className="text-theme-light/80">9605861643</span>
                 </div>
               </div>
               
               <h3 className="text-xl font-bold mb-4 mt-8 text-theme-light">Follow Me</h3>
               <div className="flex space-x-4">
-                <a href="#" className="p-2 rounded-full border border-theme-light/20 hover:border-theme-teal hover:text-theme-teal transition-colors text-theme-light">
+                <a href="https://github.com/RahulRmCoder" className="p-2 rounded-full border border-theme-light/20 hover:border-theme-teal hover:text-theme-teal transition-colors text-theme-light">
                   <Github size={20} />
                 </a>
-                <a href="#" className="p-2 rounded-full border border-theme-light/20 hover:border-theme-teal hover:text-theme-teal transition-colors text-theme-light">
+                <a href="https://www.linkedin.com/in/rahul-rajasekharan-menon-7b8315250/" className="p-2 rounded-full border border-theme-light/20 hover:border-theme-teal hover:text-theme-teal transition-colors text-theme-light">
                   <Linkedin size={20} />
                 </a>
-                <a href="#" className="p-2 rounded-full border border-theme-light/20 hover:border-theme-teal hover:text-theme-teal transition-colors text-theme-light">
-                  <Instagram size={20} />
+                <a href="https://leetcode.com/u/rahulrajasekharanmenon64325/" className="p-2 rounded-full border border-theme-light/20 hover:border-theme-teal hover:text-theme-teal transition-colors text-theme-light">
+                  <Code size={20} />
                 </a>
               </div>
             </div>

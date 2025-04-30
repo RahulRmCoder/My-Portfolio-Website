@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="text-center">
           <p className="text-theme-light/60">
-            &copy; {currentYear} Your Name. All rights reserved.
+            &copy; {currentYear} Rahul Rajasekharan Menon. All rights reserved.
           </p>
         </div>
       </div>

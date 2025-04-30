@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -45,7 +44,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-theme-light">Who I Am</h3>
+            <h3 className="text-2xl font-bold mb-4 text-theme-light">Who Am I</h3>
             <motion.p 
               className="text-theme-light/80 mb-4"
               initial={{ opacity: 0 }}
@@ -53,9 +52,16 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              I'm a passionate full stack developer with a keen eye for design and a strong foundation in modern web technologies. 
-              With years of experience building responsive and intuitive applications, I strive to create engaging user experiences 
-              that solve real-world problems.
+              I am a Computer Engineering student at Jain University with
+ strong skills in Python, machine learning, and web development.
+ Through internships and hackathons, I have gained practical
+ experience in machine learning projects and chatbot
+ development. My academic projects, including an AI Text
+ Processing Application, Word Weave (a blogging website), and
+ CraveCrafters (a food ordering web application), demonstrate
+ my ability to apply technical knowledge to real-world problems.
+ I am eager to contribute my skills and passion for technology to
+ drive innovation in your company.
             </motion.p>
             <motion.p 
               className="text-theme-light/80 mb-6"
@@ -70,9 +76,9 @@ const About = () => {
             
             <div className="flex flex-wrap gap-6">
               {[
-                { value: '20+', label: 'Projects Completed' },
-                { value: '5+', label: 'Years Experience' },
-                { value: '15+', label: 'Happy Clients' }
+                { value: '50+', label: 'Projects Completed' },
+                { value: '3+', label: 'Years Experience in Coding' },
+                { value: '100+', label: 'Leet Code Questions solved' }
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -105,25 +111,25 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4">
                 <div>
                   <p className="text-theme-light/60 text-sm">Name</p>
-                  <p className="text-theme-light">Your Name</p>
+                  <p className="text-theme-light">Rahul Rajasekharan Menon</p>
                 </div>
                 <div>
                   <p className="text-theme-light/60 text-sm">Email</p>
-                  <p className="text-theme-light">youremail@example.com</p>
+                  <p className="text-theme-light break-all">rahulrajasekharanmenon64325@gmail.com</p>
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <p className="text-theme-light/60 text-sm">Location</p>
-                  <p className="text-theme-light">City, Country</p>
+                  <p className="text-theme-light">Bengaluru, India</p>
                 </div>
                 <div>
                   <p className="text-theme-light/60 text-sm">Availability</p>
-                  <p className="text-theme-light">Freelance / Full-time</p>
+                  <p className="text-theme-light">Intern / Full-time</p>
                 </div>
               </div>
               
@@ -135,7 +141,7 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span>Download Resume</span>
+                <span>View Resume</span>
                 <ArrowRight size={16} className="ml-2" />
               </motion.a>
             </motion.div>
