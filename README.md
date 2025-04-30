@@ -137,7 +137,7 @@ Custom Tailwind theme with:
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
-Your Name - [rahulrajasekharanmenon64325@gmail.com]
+Your email - [rahulrajasekharanmenon64325@gmail.com]
 
 Website Link: [My Portfolio](https://my-portfolio-website-three-zeta.vercel.app/)
 
