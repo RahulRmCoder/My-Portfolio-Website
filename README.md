@@ -49,12 +49,12 @@ A modern, responsive personal portfolio website showcasing projects, skills, cer
 ### Installation Steps
 1. Clone the repository
 ```bash
-git clone https://github.com/RahulRmCoder/portfolio.git
+git clone https://github.com/RahulRmCoder/My-Portfolio-Website.git
 ```
 
 2. Navigate to project directory
 ```bash
-cd portfolio
+cd My-Portfolio-Website
 ```
 
 3. Install dependencies
@@ -73,7 +73,7 @@ yarn dev
 
 ## 📂 Project Structure
 ```
-portfolio/
+My-Portfolio-Website/
 │
 ├── public/
 │   └── images/
@@ -139,7 +139,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📬 Contact
 Your Name - [rahulrajasekharanmenon64325@gmail.com]
 
-Project Link: [https://github.com/RahulRmCoder/portfolio](https://github.com/RahulRmCoder/portfolio)
+Project Link: [https://github.com/RahulRmCoder/My-Portfolio-Website](https://github.com/RahulRmCoder/My-Portfolio-Website)
 
 ---
 
