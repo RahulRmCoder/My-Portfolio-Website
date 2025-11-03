@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
   },
   {
     id: 6,
-    title: "GrammarGuru",
+    title: "GrammarGurU",
     description: "GrammarGuru is a web application that provides instant feedback on grammar, punctuation, and style to help users improve their writing. Whether you're drafting emails, writing content, or communicating in English as a second language, GrammarGuru helps you express yourself clearly and correctly.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nfGVufDB8fDB8fHww",
     technologies: ["HTML", "Tailwind CSS", "Typescript","React","Lyzr AI Agent"],
