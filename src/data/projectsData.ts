@@ -22,9 +22,9 @@ export const projectsData: Project[] = [
     id: 2,
     title: "Jira Automation with REST Assured & TestNG",
     description: "Automated Jira workflows using Atlassian Jira Cloud REST APIs, Rest Assured, and TestNG, enabling creation and management of Epics, Stories, Subtasks, Bugs, and Sprints.",
-    image: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fman-taking-online-test-computer-desk-indoors-man-taking-online-test-computer-desk-indoors-image246290056&psig=AOvVaw3Wvw-Acz9lwhe25IjkjOmW&ust=1762281385769000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCxyfLP1pADFQAAAAAdAAAAABAd",
     technologies: ["Java", "REST Assured", "TestNG", "Maven","Jira Cloud REST API v3"],
-    codeLink: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fman-taking-online-test-computer-desk-indoors-man-taking-online-test-computer-desk-indoors-image246290056&psig=AOvVaw3Wvw-Acz9lwhe25IjkjOmW&ust=1762281385769000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCxyfLP1pADFQAAAAAdAAAAABAd"
+    codeLink: "https://github.com/RahulRmCoder/Jira-Automation-with-REST-Assured-TestNG"
   },
   {
     id: 3,
