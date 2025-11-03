@@ -11,6 +11,30 @@ interface Certification {
 export const certificationsData: Certification[] = [
   {
     id: 1,
+    title: "Executive Post Graduate Certification in Data Science and Artificial Intelligence",
+    issuer: "IIT Roorkee",
+    date: "June, 2025",
+    image: "https://outreach.iitr.ac.in/static/media/AboutIITR_Img.23b1d817.png",
+    credentialLink: "https://tih.iitr.ac.in/Certificate/intellipaat/IPTIH230815.jpg"
+  },
+  {
+    id: 2,
+    title: "Rest API Testing (Automation) from Scratch – Rest Assured Java",
+    issuer: "Udemy",
+    date: "November, 2025",
+    image: "https://i.pcmag.com/imagery/reviews/05LfIOxtkYAZ4BIOXwOnZJs-24..v1626447626.png",
+    credentialLink: "https://www.udemy.com/certificate/UC-90dda811-3f95-449d-b054-7e9a6bbb5ec4/"
+  },
+  {
+    id: 3,
+    title: "The Complete Full-Stack Web Development Bootcamp",
+    issuer: "Udemy",
+    date: "September, 2025",
+    image: "https://i.pcmag.com/imagery/reviews/05LfIOxtkYAZ4BIOXwOnZJs-24..v1626447626.png",
+    credentialLink: "https://www.credly.com/badges/d8498993-6038-4c6a-8095-d2ad0210b5ca/public_url"
+  },
+  {
+    id: 4,
     title: "NoSQL Databases Essentials",
     issuer: "IBM",
     date: "August, 2024",
@@ -18,7 +42,7 @@ export const certificationsData: Certification[] = [
     credentialLink: "https://www.credly.com/badges/d8498993-6038-4c6a-8095-d2ad0210b5ca/public_url"
   },
   {
-    id: 2,
+    id: 5,
     title: "Introduction Generative AI ",
     issuer: "Google",
     date: "May, 2024",
@@ -26,11 +50,12 @@ export const certificationsData: Certification[] = [
     credentialLink: "https://www.coursera.org/account/accomplishments/verify/UCD67KEL7ZLR"
   },
   {
-    id: 3,
+    id: 6,
     title: "The Complete Python Bootcamp",
     issuer: "Udemy",
     date: "April, 2024",
     image: "https://i.pcmag.com/imagery/reviews/05LfIOxtkYAZ4BIOXwOnZJs-24..v1626447626.png",
     credentialLink: "https://www.udemy.com/certificate/UC-2c7382f5-cf61-4a3e-b5c4-1533df95544e/"
   }
+  
 ];
