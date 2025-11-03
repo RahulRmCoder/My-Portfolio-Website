@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     id: 2,
     title: "Jira Automation with REST Assured & TestNG",
     description: "Automated Jira workflows using Atlassian Jira Cloud REST APIs, Rest Assured, and TestNG, enabling creation and management of Epics, Stories, Subtasks, Bugs, and Sprints.",
-    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2024%2F04%2Ftop-coding-platforms-for-data-science-beginners%2F&psig=AOvVaw2NI_6z2ZGCSpdL0mSYc_9F&ust=1762281902857000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPje7ejR1pADFQAAAAAdAAAAABAl",
+    image: "https://www.freepik.com/free-vector/code-testing-cartoon-banner-functional-test-methodology-programming-search-errors-bugs-website-platform-development-dashboard-usability-optimization-computer-pc-vector-illustration_10487786.htm#fromView=search&page=1&position=5&uuid=96237c7f-6193-4e08-bacd-041bb4dec12e&query=testing",
     technologies: ["Java", "REST Assured", "TestNG", "Maven","Jira Cloud REST API v3"],
     codeLink: "https://github.com/RahulRmCoder/Jira-Automation-with-REST-Assured-TestNG"
   },
