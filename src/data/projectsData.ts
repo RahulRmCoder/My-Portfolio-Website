@@ -20,6 +20,14 @@ export const projectsData: Project[] = [
   },
   {
     id: 2,
+    title: "Jira Automation with REST Assured & TestNG",
+    description: "Automated Jira workflows using Atlassian Jira Cloud REST APIs, Rest Assured, and TestNG, enabling creation and management of Epics, Stories, Subtasks, Bugs, and Sprints.",
+    image: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    technologies: ["Java", "REST Assured", "TestNG", "Maven","Jira Cloud REST API v3"],
+    codeLink: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fman-taking-online-test-computer-desk-indoors-man-taking-online-test-computer-desk-indoors-image246290056&psig=AOvVaw3Wvw-Acz9lwhe25IjkjOmW&ust=1762281385769000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCxyfLP1pADFQAAAAAdAAAAABAd"
+  },
+  {
+    id: 3,
     title: "Word Weave: Blogging Website",
     description: "Word Weave – AI-powered modern blogging platform with a dark theme, intuitive writing, social engagement, and advanced analytics. ",
     image: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
@@ -27,7 +35,7 @@ export const projectsData: Project[] = [
     codeLink: "https://github.com/RahulRmCoder/Word-Weave-Blogging-Website"
   },
   {
-    id: 3,
+    id: 4,
     title: " CraveCrafters: Food Ordering Web Application",
     description: " CraveCrafters – AI-powered food ordering web app with a chatbot for menu browsing, orders & support. Built with Node.js, FastAPI, MongoDB & JS.",
     image: "https://media.istockphoto.com/id/2166408604/photo/group-adult-asia-male-female-freelance-typing-write-prompt-ai-bot-it-app-smart-program-nomad.webp?a=1&b=1&s=612x612&w=0&k=20&c=MVxFXRqN3d3UMU11rRitHUU6-KQ6lmIRf0GJAnVn-2k=",
@@ -35,7 +43,7 @@ export const projectsData: Project[] = [
     codeLink: "https://github.com/RahulRmCoder/CraveCrafters-Food-App"
   },
   {
-    id: 4,
+    id: 5,
     title: "GrammarGuru",
     description: "GrammarGuru is a web application that provides instant feedback on grammar, punctuation, and style to help users improve their writing. Whether you're drafting emails, writing content, or communicating in English as a second language, GrammarGuru helps you express yourself clearly and correctly.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nfGVufDB8fDB8fHww",
