@@ -52,16 +52,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              I am a Computer Engineering student at Jain University with
- strong skills in Python, machine learning, and web development.
- Through internships and hackathons, I have gained practical
- experience in machine learning projects and chatbot
- development. My academic projects, including an AI Text
- Processing Application, Word Weave (a blogging website), and
- CraveCrafters (a food ordering web application), demonstrate
- my ability to apply technical knowledge to real-world problems.
- I am eager to contribute my skills and passion for technology to
- drive innovation in your company.
+              I am a Computer Engineering student at Jain University and a Full Stack Developer with a strong foundation in Python, machine learning, web development, and API testing. Through internships and hackathons, I’ve gained hands-on experience developing AI-driven solutions such as chatbots, text processors, and conversational AI agents. My academic projects—including an AI Text Processing Application, Word Weave (a blogging website), and CraveCrafters (a food ordering web application)—demonstrate my ability to apply technical knowledge to real-world challenges. Certified in Data Science and AI from IIT Roorkee, I am eager to contribute innovation, technical excellence, and a passion for technology to forward-thinking teams.
             </motion.p>
             <motion.p 
               className="text-theme-light/80 mb-6"
@@ -76,9 +67,9 @@ const About = () => {
             
             <div className="flex flex-wrap gap-6">
               {[
-                { value: '50+', label: 'Projects Completed' },
+                { value: '70+', label: 'Projects Completed' },
                 { value: '3+', label: 'Years Experience in Coding' },
-                { value: '100+', label: 'Leet Code Questions solved' }
+                { value: '200+', label: 'Leet Code Questions solved' }
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -134,7 +125,7 @@ const About = () => {
               </div>
               
               <motion.a 
-                href="https://docs.google.com/document/d/11cnAvMgFQlUKJwKxs3tJ-l7c7ejDQLeUDKcCMqN5fOk/edit?usp=drive_link" 
+                href="https://docs.google.com/document/d/1OVj2cfu6mxSmYD-_r2MnULMVA2l6BEDNW96JxXoox4o/edit?tab=t.0" 
                 className="inline-flex items-center text-theme-teal hover:text-theme-amber transition-colors mt-4"
                 target="_blank" 
                 rel="noopener noreferrer"
