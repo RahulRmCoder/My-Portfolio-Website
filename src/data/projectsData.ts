@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: "“AI File Manager”: Conversational Project Structure & File Management Tool",
+    title: "“AI File Manager”: File Management Tool",
     description: " AI-powered tool for automated project scaffolding and file operations using Google Gemini 2.0 Flash.",
     image: "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
     technologies: ["HTML", "CSS", "Javascript", "Expess.js","Agentic AI","Generative AI","Gemini API"],
