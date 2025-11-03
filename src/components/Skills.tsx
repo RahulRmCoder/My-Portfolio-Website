@@ -33,6 +33,9 @@ const Skills = () => {
     { name: 'Java', level: 85, category: 'programming languages' },
 
     // Tools
+    { name: 'Rest Assured', level: 95, category: 'tools' },
+    { name: 'TestNG', level: 95, category: 'tools' },
+    { name: 'Cucumber', level: 95, category: 'tools' },
     { name: 'Git/GitHub', level: 80, category: 'tools' },
     { name: 'Linux', level: 70, category: 'tools' },
     { name: 'Selenium', level: 75, category: 'tools' },
@@ -48,6 +51,13 @@ const Skills = () => {
     { name: 'AI Agents', level: 75, category: 'ai' },
     { name: 'Hadoop and Hive', level: 70, category: 'ai' },
     { name: 'Data Structures & Algorithms', level: 90, category: 'ai' },
+
+    //API and Testing
+    { name: 'REST API', level: 95, category: 'testing' },
+    { name: 'Gherkin', level: 90, category: 'testing' },
+    { name: 'GraphQL', level: 80, category: 'testing' },
+    { name: 'Selenium', level: 85, category: 'testing' },
+    { name: 'API Automation Testing', level: 95, category: 'testing' },
   ];
 
   const categories = [
@@ -55,7 +65,8 @@ const Skills = () => {
     { id: 'backend', label: 'Backend' },
     { id: 'programming languages', label: 'Programming Languages' },
     { id: 'tools', label: 'Tools and Technologies' },
-    { id: 'ai', label: 'AI and Data' }
+    { id: 'ai', label: 'AI and Data' },
+    { id: 'testing', label: 'API and Testing' }
   ];
   
   const [activeCategory, setActiveCategory] = useState('frontend');
